@@ -1,4 +1,5 @@
-const tobuy = ["potato", "tomato", "pizza"];
-tobuy.push("burger");
+function plus(a, b){
+    console.log(a + b);
+}
 
-console.log(tobuy);
+plus(5, 5)
