@@ -1,5 +1,8 @@
-function plus(a, b){
-    console.log(a + b);
-}
+const calculator = {
+    add : function(a,b){
+        console.log(a, b);
+    },
+};
 
-plus(5, 5)
+calculator.add(5, 1);
+console.log()
