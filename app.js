@@ -1,33 +1,28 @@
 const calculator = {//+ - / * **
-    add : function(a, b){
-        console.log(a, b);
-    },
 
     plus : function(a, b){
-        console.log(a + b);
+    return a + b;
     },
-
+    
     minus : function(a, b){
-        console.log(a - b);
+    return a - b;
     },
-
-    devide : function(a, b){
-        console.log(a / b);
-    },
-
+    
     multiple : function(a, b){
-        console.log(a * b);
+    return a * b;
     },
-
+    
+    devide : function(a, b){
+    return a / b;
+    },
+    
     powerOf : function(a, b){
-        console.log(a ** b);
+    return a ** b;
     }
 };
 
-calculator.add(5, 1);
-calculator.plus(5, 1);
-calculator.minus(6, 2);
-calculator.devide(6, 2);
-calculator.multiple(6, 2);
-calculator.powerOf(6, 2);
-console.log()
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const multipleResult = calculator.multiple(10,minusResult);
+const devideResult = calculator.devide(multipleResult, plusResult);
+const powerOfResult = calculator.powerOf(devideResult, minusResult);
