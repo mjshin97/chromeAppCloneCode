@@ -1,24 +1,7 @@
-const calculator = {//+ - / * **
+const age = parseInt(prompt("How old are you?")); //function is started from the inside to outside
 
-    plus : function(a, b){
-        return a + b; //when return some value, function will be finish their job
-    },
-    
-    minus : function(a, b){
-        return a - b;
-    },
-    
-    multiple : function(a, b){
-        return a * b;
-    },
-    
-    devide : function(a, b){
-        return a / b;
-    },
-    
-    powerOf : function(a, b){
-        return a ** b;
-    }
-};
-
-const plusResult = calculator.plus(2, 3);
+if(isNaN(age)){
+    console.log("please write a number");
+} else{
+    console.log("Thank you for writing your age");
+}
