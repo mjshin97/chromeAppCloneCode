@@ -14,6 +14,9 @@ function handleMouseLeave(){
 
 function handleWindowResize(){
     document.body.style.backgroundColor = "tomato";
+    document.title = "Hello! from JS"; //3.changing title when you resize screen
+    h1.style.color = "green"; //5.title colour will be change to green
+    h1.innerText = "colour has been changed";
 }
 
 function handleWindowCopy(){
@@ -29,8 +32,8 @@ function handleWindowOnline(){
 }
 
 h1.onclick = ("click", handleTitleClick);           //those are the event about mouse condition
-h1.addEventListener("mouseenter",handleMouseEnter); //when the mouse is on the word it will be notice you
-h1.addEventListener("mouseleave",handleMouseLeave); //when the mouse has been left word will notice you
+h1.addEventListener("mouseenter",handleMouseEnter); //1.when the mouse is on the text, this will be notify
+h1.addEventListener("mouseleave",handleMouseLeave); //2.when the mouse has been left from the text, this will be notfy
 
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy",handleWindowCopy);
