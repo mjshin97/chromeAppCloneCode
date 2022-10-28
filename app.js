@@ -1,12 +1,12 @@
 function handleWindowResize(){
     if(innerWidth > 1000) {
-        document.body.style.backgroundColor = "tomato";
+        document.body.style.backgroundColor = "white";
     }
-    else if(innerWidth < 1000 && innerWidth >500) {
+    else if(innerWidth < 1000 && innerWidth >700) {
         document.body.style.backgroundColor = "green";
     }
     else {
-        document.body.style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "tomato";
     }
 
     
