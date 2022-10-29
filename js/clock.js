@@ -1,9 +1,12 @@
 const clock = document.querySelector("h2#clock");
 
 function getClock() {
-    const date = new Date();
-    clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`; //has been mistake
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+  clock.innerText = `${hours}:${minutes}:${seconds}`; //this is a clock 
 }
 
-getClock(); //Creating a clock
-setInterval(getClock, 1000); //********
+getClock();
+setInterval(getClock, 1000);
