@@ -6,4 +6,5 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.body.prepend(bgImage); //'prepend' make image will top of everything(on the top)
+//document.body.appendChild(bgImage); //'append' make image will next of everything(the end)
