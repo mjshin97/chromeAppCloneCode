@@ -11,7 +11,7 @@ function onSubmitBtnClick() {
     } else {
         console.log("now you can guess number", submitInput.value);
         //new code.
-        random = Math.floor(Math.random() * submitInput.value) // creating random number
+        random = Math.round(Math.random() * submitInput.value) // creating random number // *ciel,*round,*floor
         //new code done.
     }
 }
@@ -19,8 +19,10 @@ function onSubmitBtnClick() {
 function onPlayBtnClick() {
     if(random == playInput.value){
         console.log("exactly!", playInput.value);
+        alert("exactly!!");
     } else {
         console.log("try again");
+        alert("try agin!!");
     }
 }
 
