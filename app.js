@@ -1,19 +1,24 @@
 const submitInput = document.querySelector("#submit-form input");
 const submitButton = document.querySelector("#submit-form button");
+let random = 0;
 
 const playInput = document.querySelector("#play-form input");
 const playButton = document.querySelector("#play-form button");
 
 function onSubmitBtnClick() {
-    if(submitInput.value <= 0){
-        console.log("you should use number over then 0");
+    if(submitInput.value < 0){
+        console.log("you should use number 0 or more");
+    } else {
+        console.log("now you can guess number", submitInput.value);
+        //new code.
+        random = Math.floor(Math.random() * submitInput.value) // creating random number
+        //new code done.
     }
-    else console.log("now you can guess number below", submitInput.value);
 }
 
 function onPlayBtnClick() {
-    if(submitInput.value == playInput.value){
-        console.log("hello", playInput.value);
+    if(random == playInput.value){
+        console.log("exactly!", playInput.value);
     } else {
         console.log("try again");
     }
