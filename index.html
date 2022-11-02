@@ -1,25 +1,25 @@
-<!DOCTYPE html> <!--back to 4.0 More Events(from 6.2) (new challange on 31october)-->
+<!DOCTYPE html> <!--back to #5.3 Recap (04:44) (new challange on 1november)-->
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/style.css" />
       <title>Momentum App</title>
    </head>
    <body>
-      <h1>Random Number Game</h1>
-
-      <div id="submit-form">
-         <input type = "number" placeholder="within" />
-         <button>Submit</button>
-      </div>
-
-      <div id="play-form">
-         <input type = "number" placeholder="guess number" />
-         <button>Play</button>
-      </div>
-
-      <script src="app.js"></script>
+      <form class = "hidden" id="login-form">
+         <input 
+            required 
+            maxlength="15" 
+            type="text" 
+            placeholder="what is your name?" 
+         />
+         <input type="submit" value = "Log In"/>
+      </form>
+      <h2 id = "clock">00:00:00</h2>
+      <h1 class = "hidden" id = "greeting"></h1>
+      <script src="js/greetings.js"></script>
+      <script src="js/clock.js"></script>
    </body>
 </html>
-<!--#4.0 Input Values (09:48)-->
+<!--#5.3 Recap (04:44)-->
