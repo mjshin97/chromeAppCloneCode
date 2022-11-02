@@ -11,7 +11,7 @@ function getClock() {
     */
     
     
-    const christmas = new Date("2022-12-25:00:00:00+0900");
+    const christmas = new Date("2022-12-25:00:00:00");
     const today = new Date();
     const gap = christmas.getTime() - today.getTime();
     const date = Math.ceil(gap / (60 * 60 * 24 * 1000));
